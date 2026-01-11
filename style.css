@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header input {
+    margin-top: 10px;
+    padding: 8px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Main Layout */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Event Cards */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+.event-card.past {
+    background-color: #d1d5db;
+}
+
+.event-card button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color: darkred;
+}
+
+/* Form */
+.form-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+form button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: #1d4ed8;
+}
+
+#warningMessage {
+    color: red;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saqib Aziz - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Saqib Aziz's Portfolio</h1>
-  <p>This website showcases all Lab 02 exercises from CS224L - Web Technologies.</p>
-  <nav>
-    <a href="profile.html">Profile</a> |
-    <a href="schedule.html">Schedule</a> |
-    <a href="navigation.html">Navigation</a> |
-    <a href="registration.html">Registration</a>
-  </nav>
-  <p>Visit my <a href="https://github.com/saqib3877" target="_blank">GitHub Profile</a>.</p>
+
+    <!-- Header -->
+    <header>
+        <h1>Event Horizon</h1>
+        <input type="text" id="searchInput" placeholder="Search events by name or date">
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Event List -->
+        <section id="eventList" class="event-list">
+            <!-- Events will appear here dynamically -->
+        </section>
+
+        <!-- Add Event Form -->
+        <section class="form-section">
+            <h2>Add New Event</h2>
+            <form id="eventForm">
+                <input type="text" id="eventName" placeholder="Event Name">
+                <input type="date" id="eventDate">
+                <textarea id="eventDescription" placeholder="Event Description"></textarea>
+                <button type="submit">Add Event</button>
+                <p id="warningMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Saqib Aziz © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
